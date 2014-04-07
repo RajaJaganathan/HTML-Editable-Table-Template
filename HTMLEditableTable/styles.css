@@ -1,0 +1,233 @@
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+        }
+
+        #wrapper {
+            background-color: #efefef;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .tbl-heading {
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #controlTableSelect {
+            margin: 10px;
+        }
+
+        #ctrl-table-tabs {
+            padding: 0px;
+        }
+
+        .control-tbl-container {
+            padding: 10px;
+        }
+
+        .tbl-title {
+            padding-bottom: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .person-table {
+            width: 100%;          
+            max-width:950px;
+        }
+
+        .person-table thead tr {
+            background: rgba(229,76,16,1);
+            height: 30px;
+            color: #FFFFFF;
+        }
+
+        .person-table thead tr th {
+            padding-left: 3px;
+            vertical-align: middle;
+        }
+
+        .person-table tr td, .person-table tr th {
+            text-align: left;
+            margin: 10px;
+            height: 30px;
+        }
+
+        .person-table tbody input {
+            width: 85%;
+        }
+
+        .person-table tbody tr {
+            height: 30px;
+            /*display:inline;*/
+        }
+
+        .person-table tbody tr:nth-child(odd) {
+            background: rgba(229,76,16,0.1);
+        }
+
+        .person-table tbody tr:nth-child(even) {
+            background: rgba(255,255,255,0.1);
+        } 
+
+        .ie-tr-odd-background-fix{
+            background: #f0f0f5;
+        }
+
+        .ie-tr-even-background-fix {
+            background: #e0e0eb;
+        } 
+      
+        .person-table, td, th {
+            border: 1px solid #8e8e8e;
+        }
+
+        .person-table td {
+            padding-left: 3px;
+            vertical-align: middle;
+            word-wrap: break-word; /* wrap lines */
+        }
+
+        .person-table .td-center-align {
+            text-align: center;
+            width: 150px;
+        }
+
+        #table-scroll2 .td-center-align {
+            width: 50px;
+        }
+
+        .person-table tbody tr td img {
+            cursor: pointer;
+            padding-left: 5px;
+        }
+
+        .addrow-button {
+            /*background: url('addrow.png') no-repeat;
+            padding-left: 30px;*/
+            margin-top: 30px;
+            height: 35px;
+        }
+
+        /* Td width and height styles */
+
+        .name-td, .age-td, .dob-td {
+            max-width: 100px;
+            max-height: 50px;
+            overflow: hidden;
+        }
+
+        .profression-td {
+            max-width: 290px;
+        }
+
+        .grouping-groupname-td, .grouping-productid-td, .grouping-productname-td {
+            max-width: 100px;
+            max-height: 50px;
+            overflow: hidden;
+        }
+
+        /* end of Td width and height styles*/
+
+        .newRow, .editingRow {
+            background: #FCFC81 !important;
+        }
+
+
+        /* Tooltip  and somether purpose */
+        .btnEdit {
+        }
+
+        .btnSave {
+        }
+
+        .btnClear {
+        }
+
+        .btnDelete {
+        }
+
+
+        /* Overriding UI Tabs */
+
+        .ui-tabs-nav {
+            background-color: #efefef;
+        }
+
+        .ui-tabs .ui-tabs-nav li a {
+            font-size: 12px;
+        }
+
+        .ui-widget-content {
+            font-size: 12px;
+            background-color: #efefef !important; /*important for middle it have white color issue*/
+            background-image: none; /*important for middle it have white color issue [ex, Dialog]*/
+        }
+
+        .ui-dialog-titlebar-close {
+            display: none;
+        }
+
+        #validation-summary {
+            color:#FF0000;
+            padding:10px;
+        }
+
+        #validation-list li {
+            padding:3px;
+            list-style-type:disc !important;           
+        }
+
+        .hidden {
+            display:none;
+        }
+
+        #ajax-loader-hider {
+            position: absolute;
+            margin: 0px;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            min-width: 100%;
+            min-height: 100%;
+            background-color: #D1CCCC;            
+            z-index: 99;    /*z- index must be lower than pop up box*/
+            opacity:0.3;    /*for transparency opacity:0.6;*/
+            filter: alpha(opacity=30);
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+        }
+
+        #ajax-loader {
+            position: absolute;
+            margin: 0px;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            min-width: 100%;
+            min-height: 100%;          
+            z-index: 100;           
+        }
+
+
+        #img-holder {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 50%;
+            left: 50%;           
+            margin-top: -50px;
+            margin-left: -50px;            
+        }
+
+        .person-table tbody tr:hover {
+            background: rgba(229,76,16,0.5);
+            cursor: pointer;
+        }

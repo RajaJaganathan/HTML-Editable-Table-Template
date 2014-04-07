@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Editable Table</title>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <p class="tbl-heading">HTML Editable Table</p>
+
+        <div id="server-validation-summary">
+            <span class="error"></span>
+            <br />
+            <span class="success"></span>
+        </div>
+
+        <div id="validation-summary">
+            <ul id="validation-list"></ul>
+        </div>
+
+        <div class="control-tbl-container">
+            <p class="tbl-title">Person</p>
+            <div id="tblPerson-scroll">
+                <table id="tblPerson" class="person-table">
+                    <thead>
+                        <tr>
+                            <th class="name-td disable-select table-sorter headerAsc">Name</th>
+                            <th class="age-td disable-select table-sorter headerAsc">Age</th>
+                            <th class="profression-td">Profession</th>
+                            <th class="dob-td disable-select table-sorter headerAsc">Date of Birth</th>
+                            <th class="td-center-align">Edit</th>
+                            <th class="td-center-align">Delete</th>
+                            <td class="hidden"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name-td">2014</td>
+                            <td class="age-td">14</td>
+                            <td class="profression-td">Software Testing</td>
+                            <td class="dob-td">10/15/2013</td>
+                            <td class="td-center-align">
+                                <img src="pencil.png" class="editicon btnEdit"></td>
+                            <td class="td-center-align">
+                                <img src="delete.png" class="deleteIcon btnDelete" /></td>
+                            <td class="hidden">
+                                <input type="text" value="110" /></td>
+                        </tr>
+                        <tr>
+                            <td class="name-td">2013</td>
+                            <td class="age-td">52</td>
+                            <td class="profression-td">Software Testing</td>
+                            <td class="dob-td">10/15/2013</td>
+                            <td class="td-center-align">
+                                <img src="pencil.png" class="editicon btnEdit"></td>
+                            <td class="td-center-align">
+                                <img src="delete.png" class="deleteIcon btnDelete" /></td>
+                            <td class="hidden">
+                                <input type="text" value="111" /></td>
+                        </tr>
+                        <tr>
+                            <td class="name-td">2012</td>
+                            <td class="age-td">53</td>
+                            <td class="profression-td">Software Testing</td>
+                            <td class="dob-td">10/15/2012</td>
+                            <td class="td-center-align">
+                                <img src="pencil.png" class="editicon btnEdit"></td>
+                            <td class="td-center-align">
+                                <img src="delete.png" class="deleteIcon btnDelete" /></td>
+                            <td class="hidden">
+                                <input type="text" value="112" /></td>
+                        </tr>
+                        <tr>
+                            <td class="name-td">2011</td>
+                            <td class="age-td">52</td>
+                            <td class="profression-td">Software Testing</td>
+                            <td class="dob-td">10/15/2011</td>
+                            <td class="td-center-align">
+                                <img src="pencil.png" class="editicon btnEdit"></td>
+                            <td class="td-center-align">
+                                <img src="delete.png" class="deleteIcon btnDelete" /></td>
+                            <td class="hidden">
+                                <input type="text" value="113" /></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <button id="btnAdd" class="addrow-button">Add row </button>
+            
+            <form class="hidden">
+                <input id="personName" type="text" value="9999" />
+                <input id="personAge" type="text" value="99" />
+                <input id="personDob" type="text" value="12-12-2012" />                
+                <input id="isPersonAlreadyExists" type="text" value="0" />
+                <input id="operation" type="text" value="update" />
+                <input id="personRowId" type="text" value="112" />
+            </form>
+
+            <select name='professionSelectOriginal' id="professionSelectOriginal" style="height: 50px" class="hidden">
+                <option value=''>Select</option>
+                <option value='Software Developer'>Software Developer</option>
+                <option value='Software Testing'>Software Testing</option>
+                <option value='Architecture'>Architecture</option>
+                <option value='Hardware Engginer'>Hardware Engginer</option>
+            </select>
+        </div>
+
+        <div id="delete-dialog-confirm" title="Delete?">
+            <p style="margin-left: 15px;">
+                <span class="ui-icon ui-icon-alert" style="float: left; margin-right: 5px;"></span>Are you sure want to delete ?
+            </p>
+        </div>
+
+        <div id="move-another-page-dialog-confirm" title="Confirmation">
+            <p style="margin-left: 15px;">
+                <span class="ui-icon ui-icon-alert" style="float: left; margin-right: 5px;"></span>You have unsaved changes
+            </p>
+        </div>
+    </div>
+    <div id="ajax-loading-modal" class="hidden">
+        <div id="ajax-loader-hider"></div>
+        <div id="ajax-loader">
+            <img id="img-holder" src="ajax-loader.gif" />
+        </div>
+    </div>
+
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="json2.js"></script>
+    <script type="text/javascript" src="function_table.js"></script>
+</body>
+</html>
