@@ -198,13 +198,13 @@ var personTable = (function () {
 
     var personConfig = {
         tableId: "tblPerson",
-        tickElement: "<img src='tick.png' class='btnSaveIcon btnSave'>",
-        clearElement: "<img src='clear.png' class='btnClearIcon btnClear'/>",
+        tickElement: "<img src='images/tick.png' class='btnSaveIcon btnSave'>",
+        clearElement: "<img src='images/clear.png' class='btnClearIcon btnClear'/>",
         textInputNumber4MaxCharElement: "<input type='text' name='personName' id='personName'" + commonTable.getValidateAlphaNumericHTMLTag() + "/>",
         textInputNumber2MaxCharElement: "<input type='text' name='personAge' id='personAge'" + commonTable.getValidateNumberHTMLTag() + "/>",
         datePickerElement: "<input type='text' name='personDateOfBirth' id='datepickerDob' class='disablePaste' readonly='readonly'>",
-        editElement: "<img src='pencil.png' class='editicon btnEdit'/>",
-        deleteElement: "<img src='delete.png' class='deleteIcon btnDelete'/>"
+        editElement: "<img src='images/pencil.png' class='editicon btnEdit'/>",
+        deleteElement: "<img src='images/delete.png' class='deleteIcon btnDelete'/>"
     };
 
     var VALIDATION_CONST = {
@@ -215,8 +215,8 @@ var personTable = (function () {
     };
 
     var PASTE_ERROR_MSG = {
-        week: "data-paste-error-msg = 'Week field contains invalid value'",
-        year: "data-paste-error-msg = 'Year field contains invalid value'"
+        name: "data-paste-error-msg = 'Name field contains invalid value'",
+        age: "data-paste-error-msg = 'age field contains invalid value'"
     };
 
     function getTDObj(par) {
