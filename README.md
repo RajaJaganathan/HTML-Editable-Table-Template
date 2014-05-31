@@ -1,4 +1,4 @@
-HTML-Editable-Table-Template
+HTML-Editable-Table
 ============================
 
-HTML Editable Table Template using JQuery and Javascript
+HTML Editable Table using JQuery and Javascript
